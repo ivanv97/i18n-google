@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { TranslateSampleComponent } from './translate-sample/translate-sample.component';
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  { path: ":lang", component: TranslateSampleComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
