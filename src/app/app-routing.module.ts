@@ -4,7 +4,7 @@ import { TranslateSampleComponent } from "./translate-sample/translate-sample.co
 import { AppComponent } from "./app.component";
 
 const routes: Routes = [
-  { path: ":lang", component: TranslateSampleComponent },
+  { path: "translate/:lang", component: TranslateSampleComponent },
   { path: "", component: AppComponent }
 ];
 
