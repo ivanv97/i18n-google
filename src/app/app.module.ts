@@ -7,9 +7,12 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TranslateSampleComponent } from './translate-sample/translate-sample.component';
+import { EnglishComponent } from './english/english.component';
+import { FrenchComponent } from './french/french.component';
+import { DutchComponent } from './dutch/dutch.component';
 
 @NgModule({
-  declarations: [AppComponent, TranslateSampleComponent],
+  declarations: [AppComponent, TranslateSampleComponent, EnglishComponent, FrenchComponent, DutchComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
