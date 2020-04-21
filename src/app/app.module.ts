@@ -7,9 +7,10 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { TranslateSampleComponent } from "./translate-sample/translate-sample.component";
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, TranslateSampleComponent],
+  declarations: [AppComponent, TranslateSampleComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
