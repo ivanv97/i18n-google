@@ -8,9 +8,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { TranslateSampleComponent } from "./translate-sample/translate-sample.component";
 import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-  declarations: [AppComponent, TranslateSampleComponent, AboutComponent],
+  declarations: [AppComponent, TranslateSampleComponent, AboutComponent, ContactComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
