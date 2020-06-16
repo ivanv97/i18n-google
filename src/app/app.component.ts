@@ -14,11 +14,6 @@ export class AppComponent {
   constructor(private _translate: TranslateService, private _router: Router) {
     this._translate.addLangs(["nl", "fr", "en"]);
     this._translate.setDefaultLang("nl");
-    let path = localStorage.getItem("path");
-    if (path) {
-      localStorage.removeItem("path");
-      this._router.navigate([path]);
-    }
     this._router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         gtag("config", "UA-163765776-1", {
