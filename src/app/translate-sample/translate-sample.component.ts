@@ -42,7 +42,7 @@ export class TranslateSampleComponent implements OnInit {
     if (this._deviceDetectorService.isDesktop()) {
       this._pdf.save("printable.pdf");
     } else {
-      this._pdf.output("dataurlnewwindow");
+      this._pdf.output("dataurlnewwindow", "printable.pdf");
     }
   }
 }
