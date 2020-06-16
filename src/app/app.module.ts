@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
+import { DeviceDetectorModule } from "ngx-device-detector";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -22,7 +23,8 @@ import { ContactComponent } from './contact/contact.component';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    DeviceDetectorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
